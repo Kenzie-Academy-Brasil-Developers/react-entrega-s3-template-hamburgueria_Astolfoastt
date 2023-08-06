@@ -1,0 +1,90 @@
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerList {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 250px;
+}
+
+.containerFlex {
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--color-white);
+  width: 100%;
+  max-width: 320px;
+
+  .header {
+    background-color: var(--color-primary);
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      color: var(--color-white);
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    button {
+      background-color: transparent;
+      color: var(--color-white);
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.priceProduct {
+  padding: 1rem;
+
+  .price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    span {
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+    .currency {
+      color: var(--color-grey-300);
+    }
+  }
+  button {
+    background-color: var(--color-grey-100);
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 60px;
+    color: var(--color-grey-300);
+    cursor: pointer;
+  }
+}
+
+.paragraph {
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 1100px) {
+  .containerFlex {
+    width: 100%;
+    max-width: 500px;
+  }
+}
